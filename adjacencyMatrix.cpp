@@ -5,6 +5,7 @@ int main(){
     //ekhane n hocce ekti graph er total number of node. e hocce sei graph er total number of edges. Edge songkhokbar matrix er input nibo.
     cin>>n>>e;
     int graphMat[n][n];
+    //node gulur value hobe n-1...
     memset(graphMat,0, sizeof(graphMat));
     while(e--){
         int a,b;
@@ -18,5 +19,9 @@ int main(){
         }
         cout<<endl;
     }
+    if(graphMat[0][2]){
+        cout<<"connected"<<endl;
+    }else cout<<"not connected"<<endl;
+
     return 0;
 }
