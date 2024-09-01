@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//Algo
 class Node{
     public:
     int val;
