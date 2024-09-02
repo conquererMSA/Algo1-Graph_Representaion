@@ -37,7 +37,18 @@ int main(){
     }
     int src,des;
     cin>>src;
+    //shortest_path of des
     cin>>des;
     bfs(src);
+    int x=des;
+    vector<int> path;
+    while(x!=-1){
+        path.push_back(x);
+        x=par[x];
+    }
+    reverse(path.begin(), path.end());
+    for(int c:path){
+        cout<<c<<endl;
+    }
     return 0;
 }
