@@ -15,3 +15,9 @@
 3 connected with
 1 child of 3
 4 child of 3
+level of 0 is 0
+level of 1 is 1
+level of 2 is 1
+level of 3 is 2
+level of 4 is 1
+level of 5 is -1
