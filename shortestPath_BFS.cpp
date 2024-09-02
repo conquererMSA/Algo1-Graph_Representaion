@@ -1,22 +1,27 @@
 #include<bits/stdc++.h>
 using namespace std;
-vector<int> v[6]; //index hocce parent and er data hocce child gulur vector.
+vector<int> v[10];
+int level[10];
+int par[10];
 void bfs(int src){
-     bool visited[6];
+     bool visited[10];
+     memset(level,-1, sizeof(level));
      memset(visited, false, sizeof(visited));
-     queue<int> q; //queue theke parent ber hoy..
+     memset(par, -1, sizeof(par));
+     queue<int> q;
      q.push(src);
+     level[src]=0;
      visited[src]=true;
      while(!q.empty()){
         int parent=q.front();
         q.pop();
-        cout<<parent<<" "<<"connected with"<<endl;
         for(auto child:v[parent]){
-            //parent er child vector v theke ber hocce.
-            cout<<child<<" "<<"child of "<<parent<<endl;
+            // cout<<child<<endl;
             if(!visited[child]){
+                level[child]=level[parent]+1;
                 q.push(child);
                 visited[child]=true;
+                par[child]=parent;
             }
         }
      }
@@ -30,8 +35,9 @@ int main(){
        v[a].push_back(b);
        v[b].push_back(a);
     }
-    int src;
+    int src,des;
     cin>>src;
+    cin>>des;
     bfs(src);
     return 0;
 }

@@ -1,23 +1,4 @@
-0 connected with
-1 child of 0
-4 child of 0
-2 child of 0
-1 connected with
-0 child of 1
-2 child of 1
-3 child of 1
-4 connected with
-0 child of 4
-3 child of 4
-2 connected with
-1 child of 2
-0 child of 2
-3 connected with
-1 child of 3
-4 child of 3
-level of 0 is 0
-level of 1 is 1
-level of 2 is 1
-level of 3 is 2
-level of 4 is 1
-level of 5 is -1
+0
+1
+2
+5
