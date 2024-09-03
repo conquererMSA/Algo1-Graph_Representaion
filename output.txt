@@ -1,1 +1,24 @@
-
+parent 0
+1
+4
+2
+parent 1
+0
+5
+3
+4
+parent 4
+0
+1
+5
+parent 2
+3
+0
+parent 5
+1
+3
+4
+parent 3
+2
+5
+1
