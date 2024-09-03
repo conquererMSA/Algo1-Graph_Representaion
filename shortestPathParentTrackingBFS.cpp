@@ -53,11 +53,15 @@ int main(){
     cout<<"destination printing bfs"<<endl;
     int des;
     cin>>des; //ei node muloto ekta index
-    vector<int> path;
+    vector<int> path; //ekhane path reversly store hobe. etake revers korle straightforward path pawya jabe.
     while(des!=-1){
-        cout<<des<<" ";
+        // cout<<des<<" ";
         path.push_back(des); //store reverse path in vector
         des=nodesParent[des];
+    }
+    reverse(path.begin(), path.end());
+    for(int pathNodes:path){
+        cout<<pathNodes<<" ";
     }
     return 0;
 }

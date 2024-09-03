@@ -34,4 +34,4 @@ nodes level print
 8 level -1
 9 level -1
 destination printing bfs
-3 1 0 
+0 1 5 
