@@ -22,12 +22,19 @@ int main(){
         graph[b].push_back(a);
     }
     memset(visitedNode,false, sizeof(visitedNode));
+    vector<int> totalComponentsNodes;
     for(int i=0; i<n; i++){
         //zodi visited hoy, tahole ager component e count hoye geche. Ar visited na hole eta notun ekta component and count hobe.
         if(!visitedNode[i]){
+            totalVisited=0;
             dfs(i);
+            totalComponentsNodes.push_back(totalVisited);
         }
-
+      
+    }
+    sort(totalComponentsNodes.begin(), totalComponentsNodes.end());
+    for(auto eachComponentNodes:totalComponentsNodes){
+        cout<<eachComponentNodes<<" ";
     }
     return 0;
 }
