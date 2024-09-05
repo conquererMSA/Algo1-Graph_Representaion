@@ -24,7 +24,7 @@ void bfs(int srcR, int srcC){
         int childCol=child.second+col;
         if(isValid(childRow,childCol)&&!visitedNode[childRow][childCol]){
             visitedNode[childRow][childCol]=true;
-            level[childRow][childCol]+=1;
+            level[childRow][childCol]=level[row][col]1;
             q.push({childRow,childCol});
             // bfs(childRow, childCol);
         }
