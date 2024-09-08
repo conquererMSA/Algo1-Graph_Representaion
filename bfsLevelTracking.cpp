@@ -99,4 +99,5 @@ nodes level print
 7 level -1
 8 level -1
 9 level -1
+3
 */
