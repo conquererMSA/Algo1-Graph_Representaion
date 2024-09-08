@@ -6,7 +6,7 @@ int totalVisited=0;
 void dfs(int srcNode){
      totalVisited+=1;
      visitedNode[srcNode]=true;
-     for(int child:graph[srcNode]){
+    //  for(int child:graph[srcNode]){
         if(!visitedNode[child]){
             dfs(child);
         }
