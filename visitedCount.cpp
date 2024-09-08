@@ -8,7 +8,7 @@ void dfs(int srcNode){
      visitedNode[srcNode]=true;
      for(int child:graph[srcNode]){
         if(!visitedNode[child]){
-            // dfs(child);
+            dfs(child);
         }
      }
 }
